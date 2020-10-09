@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [APITest]" verbose="0">
+  <test thread-count="5" name="WeatherTest(failed)" verbose="0">
+    <classes>
+      <class name="org.openweathermap.WeatherTest">
+        <methods>
+          <include name="verifyWeatherTemperatureData"/>
+          <include name="verifyWeatherVisibilityData"/>
+          <include name="verifyWeatherMinTemperatureData"/>
+          <include name="verifyWeatherMaxTemperatureData"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+          <include name="verifyWeatherHumidityData"/>
+          <include name="verifyWeatherWindData"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- org.openweathermap.WeatherTest -->
+    </classes>
+  </test> <!-- WeatherTest(failed) -->
+</suite> <!-- Failed suite [APITest] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="APITest">
+    <test name="WeatherTest">
+        <classes>
+            <class name="org.openweathermap.WeatherTest">
+                <methods>
+                    <include name="testCanGetOpenweathermap" />
+                    <include name="verifyWeatherTemperatureData" />
+                    <include name="verifyWeatherMinTemperatureData" />
+                    <include name="verifyWeatherMaxTemperatureData" />
+                    <include name="verifyWeatherWindData" />
+                    <include name="verifyWeatherVisibilityData" />
+                    <include name="verifyWeatherPressureData" />
+                    <include name="verifyWeatherHumidityData" />
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 72.754 sec <<< FAILURE! - in TestSuite
+verifyWeatherTemperatureData(org.openweathermap.WeatherTest)  Time elapsed: 1.355 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path main.temp doesn't match.
+Expected: <284.15>
+  Actual: 284.78
+
+	at org.openweathermap.WeatherTest.verifyWeatherTemperatureData(WeatherTest.java:30)
+
+verifyWeatherMinTemperatureData(org.openweathermap.WeatherTest)  Time elapsed: 0.093 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path main.temp_min doesn't match.
+Expected: <283.15>
+  Actual: 283.15
+
+	at org.openweathermap.WeatherTest.verifyWeatherMinTemperatureData(WeatherTest.java:38)
+
+verifyWeatherMaxTemperatureData(org.openweathermap.WeatherTest)  Time elapsed: 0.119 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path main.temp_max doesn't match.
+Expected: <287.15>
+  Actual: 287.15
+
+	at org.openweathermap.WeatherTest.verifyWeatherMaxTemperatureData(WeatherTest.java:46)
+
+verifyWeatherWindData(org.openweathermap.WeatherTest)  Time elapsed: 0.097 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path wind.speed doesn't match.
+Expected: <7.7>
+  Actual: 7.2
+
+	at org.openweathermap.WeatherTest.verifyWeatherWindData(WeatherTest.java:53)
+
+verifyWeatherVisibilityData(org.openweathermap.WeatherTest)  Time elapsed: 0.122 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path visibility doesn't match.
+Expected: <5000>
+  Actual: 10000
+
+	at org.openweathermap.WeatherTest.verifyWeatherVisibilityData(WeatherTest.java:60)
+
+verifyWeatherHumidityData(org.openweathermap.WeatherTest)  Time elapsed: 0.129 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path main.humidity doesn't match.
+Expected: <71>
+  Actual: 67
+
+	at org.openweathermap.WeatherTest.verifyWeatherHumidityData(WeatherTest.java:74)
+
